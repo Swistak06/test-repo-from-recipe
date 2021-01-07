@@ -169,7 +169,7 @@
         "previewwebservices"
     ],
     "troubleshootingModeEnabled": true,
-    "commerceSuiteVersion": "6.7",
+    "commerceSuiteVersion": "6.7.0",
     "aspects": [
         {
             "name": "backoffice",

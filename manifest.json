@@ -3,57 +3,7 @@
         {
             "storefront": "yacceleratorstorefront",
             "template": "yacceleratorstorefront",
-            "addon": "commerceorgsamplesaddon"
-        },
-        {
-            "storefront": "yacceleratorstorefront",
-            "template": "yacceleratorstorefront",
-            "addon": "personalizationsampledataaddon"
-        },
-        {
-            "storefront": "yacceleratorstorefront",
-            "template": "yacceleratorstorefront",
-            "addon": "personalizationpromotionssampledataaddon"
-        },
-        {
-            "storefront": "yacceleratorstorefront",
-            "template": "yacceleratorstorefront",
-            "addon": "multicountrysampledataaddon"
-        },
-        {
-            "storefront": "yacceleratorstorefront",
-            "template": "yacceleratorstorefront",
-            "addon": "smarteditaddon"
-        },
-        {
-            "storefront": "ycommercewebservices",
-            "template": "ycommercewebservices",
-            "addon": "acceleratorwebservicesaddon"
-        },
-        {
-            "storefront": "yacceleratorstorefront",
-            "template": "yacceleratorstorefront",
-            "addon": "promotionenginesamplesaddon"
-        },
-        {
-            "storefront": "yacceleratorstorefront",
-            "template": "yacceleratorstorefront",
-            "addon": "textfieldconfiguratortemplateaddon"
-        },
-        {
-            "storefront": "yacceleratorstorefront",
-            "template": "yacceleratorstorefront",
-            "addon": "assistedservicepromotionaddon"
-        },
-        {
-            "storefront": "yacceleratorstorefront",
-            "template": "yacceleratorstorefront",
-            "addon": "personalizationyprofilesampledataaddon"
-        },
-        {
-            "storefront": "yacceleratorstorefront",
-            "template": "yacceleratorstorefront",
-            "addon": "pcmbackofficesamplesaddon"
+            "addon": "personalizationaddon"
         },
         {
             "storefront": "yacceleratorstorefront",
@@ -63,17 +13,12 @@
         {
             "storefront": "yacceleratorstorefront",
             "template": "yacceleratorstorefront",
-            "addon": "personalizationaddon"
+            "addon": "orderselfserviceaddon"
         },
         {
             "storefront": "yacceleratorstorefront",
             "template": "yacceleratorstorefront",
-            "addon": "personalizationsearchsamplesaddon"
-        },
-        {
-            "storefront": "yacceleratorstorefront",
-            "template": "yacceleratorstorefront",
-            "addon": "adaptivesearchsamplesaddon"
+            "addon": "commerceorgsamplesaddon"
         },
         {
             "storefront": "yacceleratorstorefront",
@@ -83,7 +28,22 @@
         {
             "storefront": "yacceleratorstorefront",
             "template": "yacceleratorstorefront",
+            "addon": "pcmbackofficesamplesaddon"
+        },
+        {
+            "storefront": "yacceleratorstorefront",
+            "template": "yacceleratorstorefront",
+            "addon": "personalizationsampledataaddon"
+        },
+        {
+            "storefront": "yacceleratorstorefront",
+            "template": "yacceleratorstorefront",
             "addon": "personalizationsearchsamplesaddon"
+        },
+        {
+            "storefront": "yacceleratorstorefront",
+            "template": "yacceleratorstorefront",
+            "addon": "smarteditaddon"
         },
         {
             "storefront": "yacceleratorstorefront",
@@ -93,7 +53,47 @@
         {
             "storefront": "yacceleratorstorefront",
             "template": "yacceleratorstorefront",
-            "addon": "orderselfserviceaddon"
+            "addon": "promotionenginesamplesaddon"
+        },
+        {
+            "storefront": "yacceleratorstorefront",
+            "template": "yacceleratorstorefront",
+            "addon": "multicountrysampledataaddon"
+        },
+        {
+            "storefront": "ycommercewebservices",
+            "template": "ycommercewebservices",
+            "addon": "acceleratorwebservicesaddon"
+        },
+        {
+            "storefront": "yacceleratorstorefront",
+            "template": "yacceleratorstorefront",
+            "addon": "personalizationsearchsamplesaddon"
+        },
+        {
+            "storefront": "yacceleratorstorefront",
+            "template": "yacceleratorstorefront",
+            "addon": "personalizationpromotionssampledataaddon"
+        },
+        {
+            "storefront": "yacceleratorstorefront",
+            "template": "yacceleratorstorefront",
+            "addon": "assistedservicepromotionaddon"
+        },
+        {
+            "storefront": "yacceleratorstorefront",
+            "template": "yacceleratorstorefront",
+            "addon": "textfieldconfiguratortemplateaddon"
+        },
+        {
+            "storefront": "yacceleratorstorefront",
+            "template": "yacceleratorstorefront",
+            "addon": "adaptivesearchsamplesaddon"
+        },
+        {
+            "storefront": "yacceleratorstorefront",
+            "template": "yacceleratorstorefront",
+            "addon": "personalizationyprofilesampledataaddon"
         }
     ],
     "extensions": [
@@ -169,7 +169,7 @@
         "previewwebservices"
     ],
     "troubleshootingModeEnabled": true,
-    "commerceSuiteVersion": "67",
+    "commerceSuiteVersion": "6.7",
     "aspects": [
         {
             "name": "backoffice",
@@ -205,36 +205,36 @@
                     "contextPath": "/yacceleratorstorefront"
                 },
                 {
-                    "name": "cmswebservices",
-                    "contextPath": "/cmswebservices"
-                },
-                {
                     "name": "cmssmarteditwebservices",
                     "contextPath": "/cmssmarteditwebservices"
                 },
                 {
-                    "name": "smartedit",
-                    "contextPath": "/smartedit"
+                    "name": "cmswebservices",
+                    "contextPath": "/cmswebservices"
                 },
                 {
-                    "name": "smarteditwebservices",
-                    "contextPath": "/smarteditwebservices"
-                },
-                {
-                    "name": "permissionswebservices",
-                    "contextPath": "/permissionswebservices"
-                },
-                {
-                    "name": "previewwebservices",
-                    "contextPath": "/previewwebservices"
+                    "name": "cmssmartedit",
+                    "contextPath": "/cmssmartedit"
                 },
                 {
                     "name": "oauth2",
                     "contextPath": "/authorizationserver"
                 },
                 {
-                    "name": "cmssmartedit",
-                    "contextPath": "/cmssmartedit"
+                    "name": "previewwebservices",
+                    "contextPath": "/previewwebservices"
+                },
+                {
+                    "name": "permissionswebservices",
+                    "contextPath": "/permissionswebservices"
+                },
+                {
+                    "name": "smarteditwebservices",
+                    "contextPath": "/smarteditwebservices"
+                },
+                {
+                    "name": "smartedit",
+                    "contextPath": "/smartedit"
                 },
                 {
                     "name": "personalizationsmartedit",

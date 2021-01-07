@@ -3,27 +3,7 @@
         {
             "storefront": "yacceleratorstorefront",
             "template": "yacceleratorstorefront",
-            "addon": "promotionenginesamplesaddon"
-        },
-        {
-            "storefront": "yacceleratorstorefront",
-            "template": "yacceleratorstorefront",
             "addon": "adaptivesearchsamplesaddon"
-        },
-        {
-            "storefront": "yacceleratorstorefront",
-            "template": "yacceleratorstorefront",
-            "addon": "commerceorgsamplesaddon"
-        },
-        {
-            "storefront": "yacceleratorstorefront",
-            "template": "yacceleratorstorefront",
-            "addon": "assistedservicepromotionaddon"
-        },
-        {
-            "storefront": "yacceleratorstorefront",
-            "template": "yacceleratorstorefront",
-            "addon": "customerticketingaddon"
         },
         {
             "storefront": "ycommercewebservices",
@@ -33,7 +13,22 @@
         {
             "storefront": "yacceleratorstorefront",
             "template": "yacceleratorstorefront",
-            "addon": "pcmbackofficesamplesaddon"
+            "addon": "commerceorgsamplesaddon"
+        },
+        {
+            "storefront": "yacceleratorstorefront",
+            "template": "yacceleratorstorefront",
+            "addon": "assistedservicestorefront"
+        },
+        {
+            "storefront": "yacceleratorstorefront",
+            "template": "yacceleratorstorefront",
+            "addon": "orderselfserviceaddon"
+        },
+        {
+            "storefront": "yacceleratorstorefront",
+            "template": "yacceleratorstorefront",
+            "addon": "promotionenginesamplesaddon"
         },
         {
             "storefront": "yacceleratorstorefront",
@@ -43,7 +38,17 @@
         {
             "storefront": "yacceleratorstorefront",
             "template": "yacceleratorstorefront",
-            "addon": "assistedservicestorefront"
+            "addon": "assistedservicepromotionaddon"
+        },
+        {
+            "storefront": "yacceleratorstorefront",
+            "template": "yacceleratorstorefront",
+            "addon": "pcmbackofficesamplesaddon"
+        },
+        {
+            "storefront": "yacceleratorstorefront",
+            "template": "yacceleratorstorefront",
+            "addon": "customerticketingaddon"
         },
         {
             "storefront": "yacceleratorstorefront",
@@ -58,17 +63,12 @@
         {
             "storefront": "yacceleratorstorefront",
             "template": "yacceleratorstorefront",
-            "addon": "smarteditaddon"
-        },
-        {
-            "storefront": "yacceleratorstorefront",
-            "template": "yacceleratorstorefront",
-            "addon": "orderselfserviceaddon"
-        },
-        {
-            "storefront": "yacceleratorstorefront",
-            "template": "yacceleratorstorefront",
             "addon": "personalizationsearchsamplesaddon"
+        },
+        {
+            "storefront": "yacceleratorstorefront",
+            "template": "yacceleratorstorefront",
+            "addon": "smarteditaddon"
         }
     ],
     "extensions": [
@@ -175,6 +175,14 @@
                     "contextPath": "/yacceleratorstorefront"
                 },
                 {
+                    "name": "smarteditwebservices",
+                    "contextPath": "/smarteditwebservices"
+                },
+                {
+                    "name": "smartedit",
+                    "contextPath": "/smartedit"
+                },
+                {
                     "name": "cmssmarteditwebservices",
                     "contextPath": "/cmssmarteditwebservices"
                 },
@@ -199,44 +207,36 @@
                     "contextPath": "/permissionswebservices"
                 },
                 {
-                    "name": "smarteditwebservices",
-                    "contextPath": "/smarteditwebservices"
-                },
-                {
-                    "name": "smartedit",
-                    "contextPath": "/smartedit"
-                },
-                {
                     "name": "personalizationsmartedit",
                     "contextPath": "/personalizationsmartedit"
                 },
                 {
-                    "name": "personalizationsmartedit",
-                    "contextPath": "/personalizationsmartedit"
+                    "name": "personalizationpromotionssmartedit",
+                    "contextPath": "/personalizationpromotionssmartedit"
                 },
                 {
-                    "name": "personalizationsmartedit",
-                    "contextPath": "/personalizationsmartedit"
+                    "name": "personalizationwebservices",
+                    "contextPath": "/personalizationwebservices"
                 },
                 {
-                    "name": "personalizationsmartedit",
-                    "contextPath": "/personalizationsmartedit"
+                    "name": "personalizationsearchsmartedit",
+                    "contextPath": "/personalizationsearchsmartedit"
                 },
                 {
-                    "name": "personalizationsmartedit",
-                    "contextPath": "/personalizationsmartedit"
+                    "name": "personalizationpromotionssmartedit",
+                    "contextPath": "/personalizationpromotionssmartedit"
                 },
                 {
-                    "name": "personalizationsmartedit",
-                    "contextPath": "/personalizationsmartedit"
+                    "name": "personalizationwebservices",
+                    "contextPath": "/personalizationwebservices"
                 },
                 {
-                    "name": "personalizationsmartedit",
-                    "contextPath": "/personalizationsmartedit"
+                    "name": "personalizationsearchsmartedit",
+                    "contextPath": "/personalizationsearchsmartedit"
                 },
                 {
-                    "name": "personalizationsmartedit",
-                    "contextPath": "/personalizationsmartedit"
+                    "name": "personalizationsearchsmartedit",
+                    "contextPath": "/personalizationsearchsmartedit"
                 }
             ],
             "properties": [

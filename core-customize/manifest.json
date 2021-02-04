@@ -11,7 +11,7 @@
             "addon": "commerceorgaddon"
         },
         {
-            "storefront": ["yacceleratorstorefront","yb2bacceleratorstorefront"],
+            "storefronts": ["yacceleratorstorefront","yb2bacceleratorstorefront"],
             "template": "yacceleratorstorefront",
             "addon": "orderselfserviceaddon"
         },

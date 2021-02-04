@@ -41,7 +41,7 @@
             "addon": "promotionenginesamplesaddon"
         },
         {
-            "storefront": ["yacceleratorstorefront","yb2bacceleratorstorefront"]",
+            "storefront": ["yacceleratorstorefront","yb2bacceleratorstorefront"],
             "template": "yacceleratorstorefront",
             "addon": "customerticketingaddon"
         },

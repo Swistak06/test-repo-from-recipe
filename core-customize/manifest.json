@@ -1,77 +1,117 @@
 {
     "storefrontAddons": [
         {
-            "storefront": "yb2bacceleratorstorefront",
+            "storefronts": [
+                "yb2bacceleratorstorefront"
+            ],
             "template": "yacceleratorstorefront",
             "addon": "b2bacceleratoraddon"
         },
         {
-            "storefront": "yb2bacceleratorstorefront",
-            "template": "yacceleratorstorefront",
-            "addon": "commerceorgaddon"
-        },
-        {
-            "storefronts": ["yacceleratorstorefront","yb2bacceleratorstorefront"],
-            "template": "yacceleratorstorefront",
-            "addon": "orderselfserviceaddon"
-        },
-        {
-            "storefront": "ycommercewebservices",
-            "template": "ycommercewebservices",
-            "addon": "acceleratorwebservicesaddon"
-        },
-        {
-            "storefront": "yacceleratorstorefront",
-            "template": "yacceleratorstorefront",
-            "addon": "smarteditaddon"
-        },
-        {
-            "storefronts": ["yacceleratorstorefront","yb2bacceleratorstorefront"],
-            "template": "yacceleratorstorefront",
-            "addon": "personalizationsearchsamplesaddon"
-        },
-        {
-            "storefronts": ["yacceleratorstorefront","yb2bacceleratorstorefront"],
-            "template": "yacceleratorstorefront",
-            "addon": "textfieldconfiguratortemplateaddon"
-        },
-        {
-            "storefronts": ["yacceleratorstorefront","yb2bacceleratorstorefront"],
-            "template": "yacceleratorstorefront",
-            "addon": "promotionenginesamplesaddon"
-        },
-        {
-            "storefronts": ["yacceleratorstorefront","yb2bacceleratorstorefront"],
-            "template": "yacceleratorstorefront",
-            "addon": "customerticketingaddon"
-        },
-        {
-            "storefronts": ["yacceleratorstorefront","yb2bacceleratorstorefront"],
-            "template": "yacceleratorstorefront",
-            "addon": "assistedservicestorefront"
-        },
-        {
-            "storefronts": ["yacceleratorstorefront","yb2bacceleratorstorefront"],
-            "template": "yacceleratorstorefront",
-            "addon": "pcmbackofficesamplesaddon"
-        },
-        {
-            "storefronts": ["yacceleratorstorefront","yb2bacceleratorstorefront"],
-            "template": "yacceleratorstorefront",
-            "addon": "adaptivesearchsamplesaddon"
-        },
-        {
-            "storefronts": ["yacceleratorstorefront","yb2bacceleratorstorefront"],
+            "storefronts": [
+                "yacceleratorstorefront",
+                "yb2bacceleratorstorefront"
+            ],
             "template": "yacceleratorstorefront",
             "addon": "commerceorgsamplesaddon"
         },
         {
-            "storefront": "ycommercewebservices",
+            "storefronts": [
+                "yacceleratorstorefront",
+                "yb2bacceleratorstorefront"
+            ],
+            "template": "yacceleratorstorefront",
+            "addon": "smarteditaddon"
+        },
+        {
+            "storefronts": [
+                "yacceleratorstorefront",
+                "yb2bacceleratorstorefront"
+            ],
+            "template": "yacceleratorstorefront",
+            "addon": "textfieldconfiguratortemplateaddon"
+        },
+        {
+            "storefronts": [
+                "yacceleratorstorefront",
+                "yb2bacceleratorstorefront"
+            ],
+            "template": "yacceleratorstorefront",
+            "addon": "personalizationsearchsamplesaddon"
+        },
+        {
+            "storefronts": [
+                "ycommercewebservices"
+            ],
             "template": "ycommercewebservices",
             "addon": "cmsoccaddon"
         },
         {
-            "storefronts": ["yacceleratorstorefront","yb2bacceleratorstorefront"],
+            "storefronts": [
+                "yacceleratorstorefront",
+                "yb2bacceleratorstorefront"
+            ],
+            "template": "yacceleratorstorefront",
+            "addon": "adaptivesearchsamplesaddon"
+        },
+        {
+            "storefronts": [
+                "yb2bacceleratorstorefront"
+            ],
+            "template": "yacceleratorstorefront",
+            "addon": "commerceorgaddon"
+        },
+        {
+            "storefronts": [
+                "yacceleratorstorefront",
+                "yb2bacceleratorstorefront"
+            ],
+            "template": "yacceleratorstorefront",
+            "addon": "assistedservicestorefront"
+        },
+        {
+            "storefronts": [
+                "ycommercewebservices"
+            ],
+            "template": "ycommercewebservices",
+            "addon": "acceleratorwebservicesaddon"
+        },
+        {
+            "storefronts": [
+                "yacceleratorstorefront",
+                "yb2bacceleratorstorefront"
+            ],
+            "template": "yacceleratorstorefront",
+            "addon": "customerticketingaddon"
+        },
+        {
+            "storefronts": [
+                "yacceleratorstorefront",
+                "yb2bacceleratorstorefront"
+            ],
+            "template": "yacceleratorstorefront",
+            "addon": "orderselfserviceaddon"
+        },
+        {
+            "storefronts": [
+                "yacceleratorstorefront",
+                "yb2bacceleratorstorefront"
+            ],
+            "template": "yacceleratorstorefront",
+            "addon": "pcmbackofficesamplesaddon"
+        },
+        {
+            "storefronts": [
+                "yacceleratorstorefront",
+                "yb2bacceleratorstorefront"
+            ],
+            "template": "yacceleratorstorefront",
+            "addon": "promotionenginesamplesaddon"
+        },
+        {
+            "storefronts": [
+                "yb2bacceleratorstorefront"
+            ],
             "template": "yacceleratorstorefront",
             "addon": "smarteditaddon"
         }
@@ -102,6 +142,8 @@
         "couponfacades",
         "cloudmediaconversion",
         "smarteditwebservices",
+        "ext2",
+        "ext1",
         "odata2webservicesfeaturetests",
         "smartedit",
         "yb2bacceleratorstorefront",
@@ -149,7 +191,7 @@
         "previewwebservices"
     ],
     "troubleshootingModeEnabled": true,
-    "commerceSuiteVersion": "1811.12",
+    "commerceSuiteVersion": "1811",
     "aspects": [
         {
             "name": "backoffice",
@@ -181,18 +223,34 @@
                     "contextPath": "/medias"
                 },
                 {
+                    "name": "yb2bacceleratorstorefront",
+                    "contextPath": "/yb2bacceleratorstorefront"
+                },
+                {
                     "name": "yacceleratorstorefront",
                     "contextPath": "/yacceleratorstorefront"
                 },
                 {
-                    "name": "yb2bacceleratorstorefront",
-                    "contextPath": "/yb2bacceleratorstorefront"
+                    "name": "ycommercewebservices",
+                    "contextPath": "/ycommercewebservices"
                 }
             ],
             "properties": [
                 {
                     "key": "spring.session.enabled",
                     "value": "true"
+                },
+                {
+                    "key": "spring.session.yb2bacceleratorstorefront.save",
+                    "value": "async"
+                },
+                {
+                    "key": "spring.session.yb2bacceleratorstorefront.cookie.name",
+                    "value": "JSESSIONID"
+                },
+                {
+                    "key": "spring.session.yb2bacceleratorstorefront.cookie.path",
+                    "value": "/yb2bacceleratorstorefront"
                 },
                 {
                     "key": "spring.session.yacceleratorstorefront.save",
@@ -207,16 +265,16 @@
                     "value": "/yacceleratorstorefront"
                 },
                 {
-                    "key": "spring.session.yb2bacceleratorstorefront.save",
+                    "key": "spring.session.ycommercewebservices.save",
                     "value": "async"
                 },
                 {
-                    "key": "spring.session.yb2bacceleratorstorefront.cookie.name",
+                    "key": "spring.session.ycommercewebservices.cookie.name",
                     "value": "JSESSIONID"
                 },
                 {
-                    "key": "spring.session.yb2bacceleratorstorefront.cookie.path",
-                    "value": "/yb2bacceleratorstorefront"
+                    "key": "spring.session.ycommercewebservices.cookie.path",
+                    "value": "/ycommercewebservices"
                 }
             ]
         },
@@ -251,36 +309,36 @@
                     "contextPath": "/medias"
                 },
                 {
-                    "name": "previewwebservices",
-                    "contextPath": "/previewwebservices"
-                },
-                {
-                    "name": "oauth2",
-                    "contextPath": "/authorizationserver"
-                },
-                {
-                    "name": "cmssmartedit",
-                    "contextPath": "/cmssmartedit"
+                    "name": "cmssmarteditwebservices",
+                    "contextPath": "/cmssmarteditwebservices"
                 },
                 {
                     "name": "cmswebservices",
                     "contextPath": "/cmswebservices"
                 },
                 {
-                    "name": "cmssmarteditwebservices",
-                    "contextPath": "/cmssmarteditwebservices"
+                    "name": "cmssmartedit",
+                    "contextPath": "/cmssmartedit"
                 },
                 {
-                    "name": "smartedit",
-                    "contextPath": "/smartedit"
+                    "name": "oauth2",
+                    "contextPath": "/authorizationserver"
+                },
+                {
+                    "name": "previewwebservices",
+                    "contextPath": "/previewwebservices"
+                },
+                {
+                    "name": "permissionswebservices",
+                    "contextPath": "/permissionswebservices"
                 },
                 {
                     "name": "smarteditwebservices",
                     "contextPath": "/smarteditwebservices"
                 },
                 {
-                    "name": "permissionswebservices",
-                    "contextPath": "/permissionswebservices"
+                    "name": "smartedit",
+                    "contextPath": "/smartedit"
                 },
                 {
                     "name": "personalizationsmartedit",
@@ -298,7 +356,7 @@
             "properties": [
                 {
                     "key": "storefrontContextRoot",
-                    "value": "yacceleratorstorefront"
+                    "value": "yb2bacceleratorstorefront"
                 }
             ]
         }
@@ -350,12 +408,16 @@
             "value": "false"
         },
         {
+            "key": "yb2bacceleratorstorefront.webroot",
+            "value": "/yb2bacceleratorstorefront"
+        },
+        {
             "key": "yacceleratorstorefront.webroot",
             "value": "/yacceleratorstorefront"
         },
         {
-            "key": "yb2bacceleratorstorefront.webroot",
-            "value": "/yb2bacceleratorstorefront"
+            "key": "ycommercewebservices.webroot",
+            "value": "/ycommercewebservices"
         },
         {
             "key": "initialpassword.admin",

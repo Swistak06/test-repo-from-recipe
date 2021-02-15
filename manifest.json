@@ -570,7 +570,7 @@
         "timedaccesspromotionengineservices",
         "savedorderforms",
         "entitlementservices",
-        "cmscockpit//deprecated",
+        "cmscockpit",
         "sapproductconfigb2baddon",
         "customerinterestsservices",
         "b2bwebservicescommons",
@@ -793,11 +793,7 @@
     "enableImageProcessingService": true,
     "properties": [
         {
-            "key": "#mykey",
-            "value": "#myvalue"
-        },
-        {
-            "key": "#hac.webroot",
+            "key": "hac.webroot",
             "value": "/hac"
         },
         {

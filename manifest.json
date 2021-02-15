@@ -570,7 +570,7 @@
         "timedaccesspromotionengineservices",
         "savedorderforms",
         "entitlementservices",
-        "cmscockpit//deprecated",
+        "cmscockpit",
         "sapproductconfigb2baddon",
         "customerinterestsservices",
         "b2bwebservicescommons",

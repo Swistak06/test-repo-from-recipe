@@ -793,11 +793,7 @@
     "enableImageProcessingService": true,
     "properties": [
         {
-            "key": "#mykey",
-            "value": "#myvalue"
-        },
-        {
-            "key": "#hac.webroot",
+            "key": "hac.webroot",
             "value": "/hac"
         },
         {

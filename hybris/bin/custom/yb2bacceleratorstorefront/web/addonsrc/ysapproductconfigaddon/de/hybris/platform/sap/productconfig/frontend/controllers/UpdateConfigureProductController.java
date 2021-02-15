@@ -54,7 +54,7 @@ import com.sap.security.core.server.csi.XSSEncoder;
  *
  * @see ConfigureProductController
  */
-@Controller()
+@Controller("asdf")
 @RequestMapping()
 public class UpdateConfigureProductController extends AbstractProductConfigController
 {

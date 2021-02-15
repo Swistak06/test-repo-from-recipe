@@ -26,7 +26,7 @@
 						<div class="carousel__item--name">${fn:escapeXml(bundleTemplate.rootBundleTemplateName)}</div>
 						<div class="carousel__item--name">${fn:escapeXml(bundleTemplate.name)}</div>
 						
-						<%-- Add bundle --%>
+						<!-- Add bundle -->
 						<c:url value="/cart/addBundle" var="addBundleToCartUrl"/>
 						<form:form method="post" id="addBundleToCartForm" class="add_to_cart_form" action="${addBundleToCartUrl}">
 							<input type="hidden" name="productCodeForBundle" value="${fn:escapeXml(product.code)}"/>

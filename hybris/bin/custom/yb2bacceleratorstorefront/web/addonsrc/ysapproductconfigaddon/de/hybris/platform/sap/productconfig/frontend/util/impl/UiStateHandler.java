@@ -56,8 +56,6 @@ import org.springframework.validation.FieldError;
  */
 public class UiStateHandler
 {
-	private static final String GENERIC_COMP_END = "]";
-	private static final String CSTICS_COMP_START = "cstics[";
 	private static final Logger LOG = Logger.getLogger(UiStateHandler.class.getName());
 	private static final String LOG_CONFIG_DATA = "configuration data with [CONFIG_ID: '";
 	static final String PATHELEMENT_GROUPS = "groups";
@@ -468,7 +466,6 @@ public class UiStateHandler
 	protected void restoreValidationErrorsInGroup(final String prefix, final Map<String, FieldError> userInputToRestore,
 			final BindingResult bindingResult, final UiGroupData group)
 	{
-		int csticNumber = 0;
 		for (final CsticData latestCstic : group.getCstics())
 		{
 			final UiType uiType = latestCstic.getType();
@@ -489,19 +486,12 @@ public class UiStateHandler
 				{
 					latestCstic.setFormattedValue(errorValue);
 				}
-				final String lastComponent = fieldError.getField().substring(fieldError.getField().lastIndexOf('.'));
-				final StringBuilder pathBuilder = new StringBuilder(prefix.length() + 26);
-				pathBuilder.append(prefix);
-				pathBuilder.append(CSTICS_COMP_START).append(csticNumber).append(GENERIC_COMP_END);
-				pathBuilder.append(lastComponent);
-
-				final FieldError newFieldError = new FieldError(fieldError.getObjectName(), pathBuilder.toString(),
+				final FieldError newFieldError = new FieldError(fieldError.getObjectName(), fieldError.getField(),
 						fieldError.getRejectedValue(), fieldError.isBindingFailure(), fieldError.getCodes(), fieldError.getArguments(),
 						fieldError.getDefaultMessage());
 				bindingResult.addError(newFieldError);
 				group.setGroupStatus(GroupStatusType.ERROR);
 			}
-			csticNumber++;
 		}
 
 		final List<UiGroupData> subGroups = group.getSubGroups();

@@ -69,8 +69,6 @@
 					</c:if>
 				</label>
 				<config:valuePrice valuePrice="${value.price}" selected="${value.selected}" csticKey="${csticKey}.${value.key}" showDeltaPrice="${value.showDeltaPrice}" />
-				<config:ruleBasedMessages csticKey="${csticKey}" csticValueKey="${value.key}" pathPrefix="${pathPrefix}domainvalues[${status.index}]."
-				messages="${value.messages}" />
 			</div>
 		</c:if>
 	</c:forEach>

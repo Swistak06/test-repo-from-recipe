@@ -61,7 +61,7 @@
 							</label>
 						</div>
 						<div class="col-xs-6 col-sm-6 notification-wrapper">
-							<input name="channels[${fn:escapeXml(loop.index)}].channel" value="${fn:escapeXml(channel.channel)}" type="text" aria-label="channels[${fn:escapeXml(loop.index)}].channel" class="display-none"/>
+							<input name="channels[${fn:escapeXml(loop.index)}].channel" value="${fn:escapeXml(channel.channel)}" type="text" class="display-none"/>
 							<input id="channel${fn:escapeXml(loop.index)}" type="checkbox" name="channels[${fn:escapeXml(loop.index)}].enabled" value="${fn:escapeXml(channel.enabled)}"
 								${channel.enabled eq true? 'checked="true"' : ''} class="notification-channel-checkbox"/>
 						</div>

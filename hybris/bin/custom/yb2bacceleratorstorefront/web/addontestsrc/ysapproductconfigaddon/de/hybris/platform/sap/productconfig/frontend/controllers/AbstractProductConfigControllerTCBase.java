@@ -740,15 +740,6 @@ public class AbstractProductConfigControllerTCBase
 		return error;
 	}
 
-	protected FieldError createErrorForSubgoup0Cstic0FromConflict()
-	{
-		//errors originating from conflict groups/cstic have different path than the original cstic
-		final FieldError error = new FieldError(SapproductconfigfrontendWebConstants.CONFIG_ATTRIBUTE,
-				"groups[1].cstics[0].formattedValue", "aaa", false, new String[]
-				{ "msg.key" }, null, "error msg");
-		return error;
-	}
-
 	protected void createDataForAutoExpandTest()
 	{
 		configData = createConfigurationDataWithGeneralGroupOnly();

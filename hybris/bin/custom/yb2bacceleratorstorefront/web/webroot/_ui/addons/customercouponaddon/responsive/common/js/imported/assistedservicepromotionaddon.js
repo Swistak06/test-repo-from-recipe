@@ -1,11 +1,11 @@
-ACC.couponpromotion = {
+ACC.assistedservicepromotion = {
 	bindAll: function ()
 	{
 		$(document).on("click",".asm-customer360-promotions-addToCart",function(e){
-			ACC.couponpromotion.handleCouponToCartAction("apply",this,"Failed to Apply to cart");
+			ACC.assistedservicepromotion.handleCouponToCartAction("apply",this,"Failed to Apply to cart");
 		});
 		$(document).on("click",".asm-customer360-promotions-removefromCart-remove",function(e){
-			ACC.couponpromotion.handleCouponToCartAction("remove",this,"Failed to remove from cart");
+			ACC.assistedservicepromotion.handleCouponToCartAction("remove",this,"Failed to remove from cart");
 		});
 	},
 	
@@ -36,8 +36,5 @@ ACC.couponpromotion = {
 
 $(document).ready(function ()
 {
-	if (typeof ACC.assistedservicepromotion.bindAll === "function") { 
-		return;
-	}
-	ACC.couponpromotion.bindAll();
+	ACC.assistedservicepromotion.bindAll();
 });

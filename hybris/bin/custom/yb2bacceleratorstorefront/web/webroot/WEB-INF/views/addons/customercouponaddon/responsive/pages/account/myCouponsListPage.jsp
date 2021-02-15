@@ -58,7 +58,7 @@
 								<div class="col-md-12">
 									<div class="pull-right">
 										<label class="comm-switch">
-											<input class="comm-switch-checkbox" onclick="return document.readyState === 'complete'" onKeyDown="return document.readyState === 'complete'" type="checkbox" notification="${fn:escapeXml(coupon.notificationOn)}" 
+											<input class="comm-switch-checkbox" onclick="return document.readyState === 'complete'" type="checkbox" notification="${fn:escapeXml(coupon.notificationOn)}" 
 												data-coupon-code="${fn:escapeXml(coupon.couponCode)}"  name="my-checkbox" <c:if test='${coupon.notificationOn}'>checked</c:if>/>
 											<span class="comm-switch-label" ></span> <span class="comm-switch-silder"></span> 
 										</label>

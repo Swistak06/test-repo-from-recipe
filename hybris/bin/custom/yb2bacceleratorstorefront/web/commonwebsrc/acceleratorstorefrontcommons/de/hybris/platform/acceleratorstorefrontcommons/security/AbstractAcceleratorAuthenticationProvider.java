@@ -47,12 +47,13 @@ public abstract class AbstractAcceleratorAuthenticationProvider extends CoreAuth
 	public Authentication authenticate(final Authentication authentication) throws AuthenticationException
 	{
 		final String username = (authentication.getPrincipal() == null) ? "NONE_PROVIDED" : authentication.getName();
-		final boolean isBruteForceAttack = bruteForceAttackCounter.isAttack(username);
-		UserModel userModel;
+		final boolean isBruteForceAttack = getBruteForceAttackCounter().isAttack(username);
+		UserModel userModel = null;
 
+		// throw BadCredentialsException if user does not exist
 		try
 		{
-			userModel = userService.getUserForUID(StringUtils.lowerCase(username));
+			userModel = getUserService().getUserForUID(StringUtils.lowerCase(username));
 		}
 		catch (final UnknownIdentifierException e)
 		{
@@ -63,13 +64,7 @@ public abstract class AbstractAcceleratorAuthenticationProvider extends CoreAuth
 			throw new BadCredentialsException(messages.getMessage(CORE_AUTHENTICATION_PROVIDER_BAD_CREDENTIALS, BAD_CREDENTIALS), e);
 		}
 
-		if (userModel.isLoginDisabled())
- 		{
-			LOG.info("Skipping authentication. User's login is disabled");
-			bruteForceAttackCounter.resetUserCounter(userModel.getUid());
-			throw new BadCredentialsException(messages.getMessage(CORE_AUTHENTICATION_PROVIDER_BAD_CREDENTIALS, BAD_CREDENTIALS));
-		}
-
+		// throw BadCredentialsException if it's brute force attack
 		if (isBruteForceAttack)
 		{
 			userModel.setLoginDisabled(true);
@@ -78,7 +73,8 @@ public abstract class AbstractAcceleratorAuthenticationProvider extends CoreAuth
 			throw new BadCredentialsException(messages.getMessage(CORE_AUTHENTICATION_PROVIDER_BAD_CREDENTIALS, BAD_CREDENTIALS));
 		}
 
-		if (!userService.isMemberOfGroup(userModel, getUserService().getUserGroupForUID(Constants.USER.CUSTOMER_USERGROUP)))
+		// throw BadCredentialsException if the user does not belong to customer user group
+		if (!getUserService().isMemberOfGroup(userModel, getUserService().getUserGroupForUID(Constants.USER.CUSTOMER_USERGROUP)))
 		{
 			throw new BadCredentialsException(messages.getMessage(CORE_AUTHENTICATION_PROVIDER_BAD_CREDENTIALS, BAD_CREDENTIALS));
 		}

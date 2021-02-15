@@ -3,5 +3,5 @@
 <%@ taglib prefix="config" tagdir="/WEB-INF/tags/addons/ysapproductconfigaddon/responsive/configuration"%>
 
 <c:if test="${config.showVariants}">	
-      <div id="configVariantSearchResults" class="cpq-vc-inProgress cpq-vc-container col-xs-12" ></div>
+      <div id="configVariantSearchResults" class="cpq-vc-inProgress cpq-vc-container col-xs-12" />
 </c:if>

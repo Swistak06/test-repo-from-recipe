@@ -7,6 +7,18 @@
  * license agreement you entered into with SAP.
  */
 
+
+
+
+
+
+
+
+
+
+
+
+
 CPQ.config = {
     lastTarget: undefined,
     addToCartClickTimestamp: 0,
@@ -237,7 +249,8 @@ CPQ.config = {
     handleRetractConflict: function (e) {
         var csticFieldId = $(e.currentTarget).parent().attr("id");
         var csticId = CPQ.idhandler.removeConflictSuffixFromCsticFieldId(csticFieldId);
-        var targetId = CPQ.core.encodeId(`${csticId}.retractValue`);
+        var targetId = CPQ.core.encodeId(csticId +
+            ".retractValue");
         var path = $(e.currentTarget).parents(".cpq-cstic").children(
             "input:hidden").attr("name");
         $(targetId).val(true);
@@ -250,10 +263,8 @@ CPQ.config = {
         $(".alert-danger").each(function () {
             if ($(this).parent().attr("class") === "global-alerts") {
                 $(document).scrollTop($(".alert-danger").offset().top - 10);
-                // break the loop
                 return false;
             }
-            return true;
         });
     },
 
@@ -261,10 +272,8 @@ CPQ.config = {
         $(".alert-info").each(function () {
             if ($(this).parent().attr("class") === "global-alerts") {
                 $(document).scrollTop($(".alert-info").offset().top - 10);
-                //break the loop
                 return false;
             }
-            return true;
         });
     },
 
@@ -581,9 +590,8 @@ CPQ.config = {
                     $(this).attr('tabindex', 0);
                 } else {
                     var csticId = id.substr(0, id.lastIndexOf("."));
-                    var firstSelector = CPQ.core.encodeId(`${id}.checkBox`);
-                    var secondSelector = CPQ.core.encodeId(`${csticId}.ddlb-button`);
-                    selector = `${firstSelector}, ${secondSelector}`;
+                    selector = CPQ.core.encodeId(id + ".checkBox") +
+                        ", " + CPQ.core.encodeId(csticId + ".ddlb-button");
 
                     formElem = $(selector);
 

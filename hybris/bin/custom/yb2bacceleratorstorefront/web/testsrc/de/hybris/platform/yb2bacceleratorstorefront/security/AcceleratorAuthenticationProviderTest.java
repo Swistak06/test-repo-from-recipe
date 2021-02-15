@@ -4,12 +4,10 @@
 package de.hybris.platform.yb2bacceleratorstorefront.security;
 
 import static org.mockito.BDDMockito.given;
-import static org.mockito.Matchers.anyString;
 import static org.mockito.Mockito.mock;
-import static org.mockito.Mockito.verify;
-import static org.mockito.Mockito.when;
 
 import de.hybris.bootstrap.annotations.UnitTest;
+import de.hybris.platform.acceleratorstorefrontcommons.security.AbstractAcceleratorAuthenticationProvider;
 import de.hybris.platform.acceleratorstorefrontcommons.security.BruteForceAttackCounter;
 import de.hybris.platform.core.Constants;
 import de.hybris.platform.core.model.user.UserGroupModel;
@@ -33,6 +31,9 @@ public class AcceleratorAuthenticationProviderTest
 {
 	private AcceleratorAuthenticationProvider acceleratorAuthenticationProvider;
 
+	@Mock
+	private AbstractAcceleratorAuthenticationProvider abstractAcceleratorAuthenticationProvider;
+
 	private Authentication authentication;
 
 	@Mock
@@ -45,7 +46,7 @@ public class AcceleratorAuthenticationProviderTest
 	UserService userService;
 
 	@Before
-	public void setUp()
+	public void setUp() throws Exception
 	{
 		MockitoAnnotations.initMocks(this);
 		acceleratorAuthenticationProvider = new AcceleratorAuthenticationProvider();
@@ -55,7 +56,7 @@ public class AcceleratorAuthenticationProviderTest
 	}
 
 	@Test(expected = BadCredentialsException.class)
-	public void testLoginForUserNotPartOfCustomerGroup()
+	public void testLoginForUserNotPartofCustomerGroup()
 	{
 		final Calendar calendar = Calendar.getInstance();
 		calendar.add(Calendar.DATE, 2);
@@ -65,17 +66,5 @@ public class AcceleratorAuthenticationProviderTest
 		given(userService.getUserGroupForUID(Constants.USER.CUSTOMER_USERGROUP)).willReturn(userGroupModel);
 		given(Boolean.valueOf(userService.isMemberOfGroup(userModel, userGroupModel))).willReturn(Boolean.FALSE);
 		acceleratorAuthenticationProvider.authenticate(authentication);
-	}
-
-	@Test(expected = BadCredentialsException.class)
-	public void testDisabledUserShouldNotBeConsideredABruteForceAttack()
-	{
-		final String uid = "testuser@hybris.com";
-		userModel.setUid(uid);
-		userModel.setLoginDisabled(true);
-
-		when(userService.getUserForUID(anyString())).thenReturn(userModel);
-		acceleratorAuthenticationProvider.authenticate(authentication);
-		verify(bruteForceAttackCounter).resetUserCounter(uid);
 	}
 }

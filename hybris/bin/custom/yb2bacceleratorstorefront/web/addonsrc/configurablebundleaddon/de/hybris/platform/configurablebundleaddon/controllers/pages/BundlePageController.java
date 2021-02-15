@@ -24,7 +24,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import javax.annotation.Resource;
@@ -72,7 +71,7 @@ public class BundlePageController extends AbstractSearchPageController
 	 * @throws CMSItemNotFoundException
 	 * 			 if an error occurs
 	 */
-	@RequestMapping(value = "/CONFIGURABLEBUNDLE/{groupNumber}", method = RequestMethod.GET)
+	@RequestMapping("/CONFIGURABLEBUNDLE/{groupNumber}")
 	public String editEntryGroup(
 			@PathVariable("groupNumber") final Integer groupNumber,
 			@RequestParam(value = "q", required = false) final String searchQuery,

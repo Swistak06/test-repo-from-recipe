@@ -124,7 +124,7 @@
 							<spring:theme code="text.${productInterest.interestType}.title" text="Notification" var="titleHtml" />
 							<spring:theme code="text.${productInterest.interestType}.type.label" text="Notification" var="notificaitonTypeLabelHtml" />
 							<div class="notificaitonPanel">
-								<input type="checkbox" name="notificaiton-checkbox-default" aria-label="notification checkbox" disabled
+								<input type="checkbox" name="notificaiton-checkbox-default" disabled
 									id="notificaiton-checkbox-default${loop.index}${status.index}"
 									class="notificaitonCheckbox" autocomplete="off" checked="checked"
 									data-title="${titleHtml}" data-productCode="${fn:escapeXml(productCodeHtml)}" data-notificationType="${fn:escapeXml(productInterest.interestType)}" />

@@ -472,26 +472,6 @@ public class UiStateHandlerTest extends AbstractProductConfigControllerTCBase //
 	}
 
 	@Test
-	public void testRestoreValidationErrorsAfterUpdate_errorInSubgroup0Cstic0FromConflict()
-	{
-		final List<UiGroupData> subGroups = createCsticsGroup();
-		final String csticKey = subGroups.get(0).getCstics().get(0).getKey();
-		configData.getGroups().get(0).setSubGroups(subGroups);
-		final CsticData numericCstic = subGroups.get(0).getCstics().get(0);
-
-		final FieldError error = createErrorForSubgoup0Cstic0FromConflict();
-		final Map<String, FieldError> userInputToRestore = new HashMap<>();
-		userInputToRestore.put(csticKey, error);
-
-		final BindingResult errors = classUnderTest.restoreValidationErrorsAfterUpdate(userInputToRestore, configData, null);
-
-		assertEquals(1, errors.getErrorCount());
-		assertEquals("CStic should have an error", CsticStatusType.ERROR, numericCstic.getCsticStatus());
-		assertEquals("groups[0].subGroups[0].cstics[0].formattedValue", errors.getFieldErrors().get(0).getField());
-
-	}
-
-	@Test
 	public void testRestoreValidationErrorsAfterUpdate_invisibleCstic()
 	{
 		final CsticData numericCstic = csticList.get(3);

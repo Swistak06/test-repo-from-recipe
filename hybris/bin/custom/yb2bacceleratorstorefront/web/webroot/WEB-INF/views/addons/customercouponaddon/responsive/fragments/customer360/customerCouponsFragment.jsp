@@ -34,7 +34,7 @@
 			
 			<div class="coupon-search-box">
 				<div class="input-group">
-					<input type="text" id="search-input" aria-label="search coupon" class="form-control"/>
+					<input type="text" id="search-input" class="form-control"/>
 					<span class="input-group-btn"> 
 						<button class="btn btn-link" id="coupons-search-btn">
 							<span class="glyphicon glyphicon-search"></span>

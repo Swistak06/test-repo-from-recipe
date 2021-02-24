@@ -780,6 +780,14 @@
                 {
                     "name": "personalizationsmartedit",
                     "contextPath": "/personalizationsmartedit"
+                },
+                {
+                    "name": "yacceleratorstorefront",
+                    "contextPath": "/yacceleratorstorefront"
+                },
+                {
+                    "name": "yb2bacceleratorstorefront",
+                    "contextPath": "/yb2bacceleratorstorefront"
                 }
             ],
             "properties": [
